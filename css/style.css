@@ -1,4 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Yellowtail");
 * {
   background-color: tomato; }
+
+h1 {
+  font-family: "Yellowtail", cursive; }
+
+body {
+  font-family: "Montserrat", sans-serif; }
 
 /*# sourceMappingURL=style.css.map */
