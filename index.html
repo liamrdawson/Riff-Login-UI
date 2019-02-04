@@ -7,17 +7,17 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+  <main>
     <header>
       <h1>Riff</h1>
     </header>
-    <main>
-      <form class="login-form" action="index.html" method="post">
-        <label>Email:<input type="text" value="me@email.com"></label>
-        <label>Password:<input type="password" value=""></label>
-        <button type="button" name="login">Log In</button>
-      </form>
-    </main>
-
+    <form class="login-form" action="index.html" method="post">
+      <label for="user_email">Email:</label>
+      <input id="user_email" type="text" value="me@email.com">
+      <label for="user_password">Password:</label>
+      <input id="user_password" type="text">
+    </form>
+  </main>
     <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>

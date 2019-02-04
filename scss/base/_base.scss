@@ -1,11 +1,33 @@
 * {
-  background-color: tomato;
+
+}
+
+html {
+  font-size: 16px;
 }
 
 h1 {
   font-family: $title-font;
+  font-size: $h1;
+  color: $brand;
+  text-align: center;
 }
 
 body {
   font-family: $main-font;
+  font-size: $text;
+  color: $text-light;
+  background-color: $bg-dark;
+}
+
+main {
+  border: $brand solid 1px;
+  border-radius: 10px;
+  width: 30%;
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
 }
