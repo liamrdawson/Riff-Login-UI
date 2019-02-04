@@ -3,12 +3,6 @@
 html {
   font-size: 16px; }
 
-h1 {
-  font-family: "Yellowtail", cursive;
-  font-size: 5.653em;
-  color: #FF5C05;
-  text-align: center; }
-
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 1em;
@@ -19,10 +13,17 @@ main {
   border: #FF5C05 solid 1px;
   border-radius: 10px;
   width: 30%;
-  margin: 0 auto; }
+  margin: 50px auto;
+  height: 500px; }
 
 form {
   display: flex;
   flex-direction: column; }
+
+.title {
+  font-family: "Yellowtail", cursive;
+  font-size: 5.653em;
+  color: #FF5C05;
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
