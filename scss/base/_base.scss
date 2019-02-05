@@ -1,5 +1,5 @@
 * {
-
+  box-sizing: border-box;
 }
 
 html {
@@ -10,15 +10,19 @@ body {
   font-family: $main-font;
   font-size: $text;
   color: $text-light;
-  background-color: $bg-dark;
+  background-color: $bg-med;
 }
 
 main {
-  border: $brand solid 1px;
+//  border: $brand solid 1px;
+  background-color: $bg-dark;
   border-radius: 10px;
   width: 30%;
   margin: 50px auto;
-  height: 500px;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
 }
 
 form {
@@ -30,8 +34,9 @@ input {
   color: $bg-med;
   font-size: $text;
   padding: 0 10px;
-  :focus {
-    outline: 0;
-    border: none;
-  }
+  outline: none;
+}
+
+button {
+  outline: none;
 }
