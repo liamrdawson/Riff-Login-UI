@@ -305,6 +305,9 @@ template {
 [hidden] {
   display: none; }
 
+* {
+  box-sizing: border-box; }
+
 html {
   font-size: 16px; }
 
@@ -312,14 +315,17 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 1em;
   color: #EEEEEE;
-  background-color: #2F2F30; }
+  background-color: #474443; }
 
 main {
-  border: #FF5C05 solid 1px;
+  background-color: #2F2F30;
   border-radius: 10px;
   width: 30%;
   margin: 50px auto;
-  height: 500px; }
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; }
 
 form {
   display: flex;
@@ -328,10 +334,11 @@ form {
 input {
   color: #474443;
   font-size: 1em;
-  padding: 0 10px; }
-  input :focus {
-    outline: 0;
-    border: none; }
+  padding: 0 10px;
+  outline: none; }
+
+button {
+  outline: none; }
 
 .login-btn {
   width: 50%;
@@ -351,6 +358,8 @@ input {
   display: flex;
   flex-direction: column;
   margin: auto; }
+  .input-field :focus {
+    border: #FF5C05 solid 2px; }
 
 button {
   background-color: #FF5C05; }
