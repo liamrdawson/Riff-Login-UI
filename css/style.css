@@ -359,10 +359,19 @@ button {
   flex-direction: column;
   margin: auto; }
   .input-field :focus {
-    border: #FF5C05 solid 2px; }
+    background-color: #ffe1d1; }
 
 button {
   background-color: #FF5C05; }
+
+.signup-call {
+  margin: auto;
+  color: rgba(238, 238, 238, 0.6); }
+  .signup-call a {
+    color: rgba(238, 238, 238, 0.6);
+    text-decoration: none; }
+    .signup-call a:hover {
+      color: #FF5C05; }
 
 .title {
   font-family: "Yellowtail", cursive;
