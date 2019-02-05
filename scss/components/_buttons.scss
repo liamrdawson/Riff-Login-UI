@@ -1,0 +1,30 @@
+
+
+.login{
+  &-btn {
+    width: 50%;
+    height: 50px;
+    margin: 20px auto;
+  }
+  &-email, &-password {
+    width: 100%;
+    height: 35px;
+    margin: 0 auto 10px;
+    background-color: $text-light;
+  }
+  &-btn, &-email, &-password {
+    border: none;
+    border-radius: 8px;
+  }
+}
+
+.input-field {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+button {
+  background-color: $brand;
+}

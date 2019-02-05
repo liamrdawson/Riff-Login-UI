@@ -3,11 +3,26 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <title>Riff App</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-
+  <main>
+    <header>
+      <h1 class="title">Riff</h1>
+    </header>
+    <form class="login-form" action="index.html" method="post">
+      <div class="input-field">
+        <label for="user_email">Email:</label>
+        <input class="login-email" id="user_email" type="text" value="me@email.com">
+      </div>
+      <div class="input-field">
+        <label for="user_password">Password:</label>
+        <input class="login-password" id="user_password" type="text">
+      </div>
+      <button class="login-btn" type="button" name="login">Log In</button>
+    </form>
+  </main>
     <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>
