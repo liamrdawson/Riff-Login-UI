@@ -25,3 +25,13 @@ form {
   display: flex;
   flex-direction: column;
 }
+
+input {
+  color: $bg-med;
+  font-size: $text;
+  padding: 0 10px;
+  :focus {
+    outline: 0;
+    border: none;
+  }
+}
