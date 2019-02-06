@@ -4,6 +4,7 @@ $title-font: 'Yellowtail', cursive;
 $main-font: 'Montserrat', sans-serif;
 
 //  TYPE SCALE -- Augmented Fourth 1.414
+$h1-xl: 7.993em;
 $h1: 5.653em;
 $h2: 3.998em;
 $h3: 2.827em;
@@ -23,3 +24,15 @@ $text-light:#EEEEEE;
 $brand:     #FF5C05;
 $success: #69CD51;
 $warning: #FF2A26;
+
+
+// BREAKPOINTS MAP
+
+$breakpoints: (
+  'xxs': 480px,
+ 'x-sm': 576px,
+   'sm': 706px,
+  'med': 768px,
+   'lg': 992px,
+  'xlg': 1200px,
+);

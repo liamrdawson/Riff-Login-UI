@@ -32,6 +32,14 @@ button {
   background-color: $brand;
 }
 
+.oops {
+  margin: auto;
+  a {
+    color: $warning;
+    text-decoration: none;
+  }
+}
+
 .signup-call {
   margin: auto;
   color: rgba($text-light, 0.6);

@@ -3,7 +3,11 @@
 }
 
 html {
-  font-size: 16px;
+  font-size: 14px;
+  height: 100vh;
+  @include mq('med') {
+    font-size: 16px;
+  }
 }
 
 body {
@@ -17,12 +21,23 @@ main {
 //  border: $brand solid 1px;
   background-color: $bg-dark;
   border-radius: 10px;
-  width: 30%;
-  margin: 50px auto;
-  height: 650px;
+  width: 90%;
+  margin: 5vh auto;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content:flex-start;
+  @include mq('med'){
+    width: 75%;
+    height: 70vh;
+  }
+  @include mq('lg'){
+    width: 60%;
+  }
+  @include mq('xlg'){
+    width: 35%;
+    height: 70vh;
+  }
 }
 
 form {

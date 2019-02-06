@@ -3,4 +3,8 @@
   font-size: $h1;
   color: $brand;
   text-align: center;
+  @include mq('med'){
+    font-size: $h1-xl;
+    margin: 60px auto;
+  }
 }

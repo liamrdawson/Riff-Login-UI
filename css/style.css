@@ -309,7 +309,11 @@ template {
   box-sizing: border-box; }
 
 html {
-  font-size: 16px; }
+  font-size: 14px;
+  height: 100vh; }
+  @media (min-width: 768px) {
+    html {
+      font-size: 16px; } }
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -320,12 +324,23 @@ body {
 main {
   background-color: #2F2F30;
   border-radius: 10px;
-  width: 30%;
-  margin: 50px auto;
-  height: 650px;
+  width: 90%;
+  margin: 5vh auto;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start; }
+  @media (min-width: 768px) {
+    main {
+      width: 75%;
+      height: 70vh; } }
+  @media (min-width: 992px) {
+    main {
+      width: 60%; } }
+  @media (min-width: 1200px) {
+    main {
+      width: 35%;
+      height: 70vh; } }
 
 form {
   display: flex;
@@ -364,6 +379,12 @@ button {
 button {
   background-color: #FF5C05; }
 
+.oops {
+  margin: auto; }
+  .oops a {
+    color: #FF2A26;
+    text-decoration: none; }
+
 .signup-call {
   margin: auto;
   color: rgba(238, 238, 238, 0.6); }
@@ -378,5 +399,9 @@ button {
   font-size: 5.653em;
   color: #FF5C05;
   text-align: center; }
+  @media (min-width: 768px) {
+    .title {
+      font-size: 7.993em;
+      margin: 60px auto; } }
 
 /*# sourceMappingURL=style.css.map */
