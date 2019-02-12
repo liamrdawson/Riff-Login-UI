@@ -327,6 +327,7 @@ main {
   width: 90%;
   margin: 5vh auto;
   height: 90vh;
+  min-height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start; }
@@ -393,6 +394,10 @@ button {
     text-decoration: none; }
     .signup-call a:hover {
       color: #FF5C05; }
+
+.input-field,
+.oops {
+  display: none; }
 
 .title {
   font-family: "Yellowtail", cursive;
