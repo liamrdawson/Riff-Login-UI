@@ -357,7 +357,7 @@ button {
 
 .input-field {
   width: 80%;
-  display: flex;
+  display: none;
   flex-direction: column;
   margin: auto; }
   .input-field :focus {
