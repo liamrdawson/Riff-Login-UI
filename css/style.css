@@ -327,20 +327,20 @@ main {
   width: 90%;
   margin: 5vh auto;
   height: 90vh;
-  min-height: 600px;
+  min-height: 650px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start; }
   @media (min-width: 768px) {
     main {
-      width: 75%;
+      width: 70%;
       height: 70vh; } }
   @media (min-width: 992px) {
     main {
-      width: 60%; } }
+      width: 50%; } }
   @media (min-width: 1200px) {
     main {
-      width: 35%;
+      width: 30%;
       height: 70vh; } }
 
 form {
