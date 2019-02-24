@@ -1,10 +1,23 @@
 
-
-.login{
+.login {
   &-btn {
     width: 50%;
     height: 50px;
-    margin: 20px auto;
+    line-height: 50px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    background-color: $brand;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 25%;
+    transition: height .2s cubic-bezier(.47,-0.13,.01,1.65),
+                width .3s cubic-bezier(.47,-0.13,.01,1.65) .25s,
+                background-color .4s,
+                left .3s cubic-bezier(.47,-0.13,.01,1.65) .25s,
+                top .3s cubic-bezier(.47,-0.13,.01,1.65) .1s, 
+                z-index .2s;  
   }
   &-email, &-password {
     width: 100%;
@@ -18,19 +31,38 @@
   }
 }
 
+.input-email {
+  opacity: 0;
+  transition: opacity .2s ease-out .5s, 
+              transform .2s cubic-bezier(.47,-0.13,.01,1.65);
+}
+
+.input-password {
+  opacity: 0;
+  transition: opacity .2s ease-out .6s, 
+              transform .3s cubic-bezier(.47,-0.13,.01,1.65) .6s;
+}
+
+.login-btn p {
+  margin-top: 0;
+  height: 100%;
+  transition: opacity .3s;
+}
+
 .input-field {
   width: 80%;
-  display: flex;
   flex-direction: column;
   margin: auto;
+  position: absolute;
+  top: 15px;
+  left: 10%;
+  
   :focus {
     background-color: lighten($brand, 40%);
   }
 }
 
-button {
-  background-color: $brand;
-}
+
 
 .oops {
   margin: auto;
@@ -42,6 +74,7 @@ button {
 
 .signup-call {
   margin: auto;
+  align-self: flex-end;
   color: rgba($text-light, 0.6);
   a {
     color: rgba($text-light, 0.6);
@@ -52,7 +85,88 @@ button {
   }
 }
 
+<<<<<<< HEAD
 .input-field,
 .oops {
   display: none;
 }
+=======
+
+//transtions
+
+
+.extend {
+  height: 35px;
+  width: 80%;
+  left: 10%;
+  top: 15px;
+  line-height: 35px;
+  background-color: $text-light;
+  z-index: 0;
+}
+
+.fade {
+  opacity: 0;
+  animation: opaque .5s 1.3s forwards;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.dropdown {
+  opacity: 1;
+  transform: translate3d(0, 50px, 0);
+}
+
+.re-button {
+  animation: re-button .5s .9s forwards;
+}
+
+@keyframes re-button {
+  0% {
+    height: 50px;
+    width: 50%;
+    left: 25%;
+    opacity: 0;
+    z-index: 0;
+    line-height: 50px;
+  }
+  30% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  50% {
+
+    top: 135px;
+  }
+  // 80% {
+    
+  //   top: 110px;
+  // }
+  100% {
+    height: 50px;
+    width: 50%;
+    left: 25%;
+    top: 120px;
+    background-color: $brand;
+    opacity: 1;
+    line-height: 50px;
+  }
+}
+
+@keyframes opaque {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+  
+}
+>>>>>>> login-btn-morph
