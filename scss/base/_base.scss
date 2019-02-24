@@ -22,12 +22,13 @@ main {
   height: 650px;
   display: flex;
   flex-direction: column;
-  justify-content:flex-start;
+
 }
 
 form {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 input {
