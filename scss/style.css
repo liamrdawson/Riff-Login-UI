@@ -416,10 +416,10 @@ button {
   align-self: flex-end;
   color: rgba(238, 238, 238, 0.6); }
   .signup-call a {
-    color: #FF5C05;
+    color: red;
     text-decoration: none; }
-    .signup-call a:hover {
-      color: rgba(255, 92, 5, 0.6); }
+    .signup-call a :hover {
+      color: blue; }
 
 .extend {
   height: 35px;
