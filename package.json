@@ -1,0 +1,32 @@
+{
+  "name": "riff-login-ui",
+  "version": "1.0.0",
+  "description": "Login-ui",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liamrdawson/Riff-Login-UI.git"
+  },
+  "keywords": [
+    "music",
+    "tuner",
+    "login",
+    "ui"
+  ],
+  "author": "Liam Dawson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/liamrdawson/Riff-Login-UI/issues"
+  },
+  "homepage": "https://github.com/liamrdawson/Riff-Login-UI#readme",
+  "devDependencies": {
+    "body-parser": "^1.19.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "pug": "^2.0.4"
+  }
+}

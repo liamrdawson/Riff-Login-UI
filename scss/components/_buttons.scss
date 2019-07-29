@@ -12,6 +12,12 @@
     z-index: 1;
     top: 0;
     left: 25%;
+    -moz-transition: height .2s cubic-bezier(.47,-0.13,.01,1.65),
+                width .3s cubic-bezier(.47,-0.13,.01,1.65) .25s,
+                background-color .4s,
+                left .3s cubic-bezier(.47,-0.13,.01,1.65) .25s,
+                top .3s cubic-bezier(.47,-0.13,.01,1.65) .1s, 
+                z-index .2s;  
     transition: height .2s cubic-bezier(.47,-0.13,.01,1.65),
                 width .3s cubic-bezier(.47,-0.13,.01,1.65) .25s,
                 background-color .4s,
@@ -19,6 +25,7 @@
                 top .3s cubic-bezier(.47,-0.13,.01,1.65) .1s, 
                 z-index .2s;  
   }
+
   &-email, &-password {
     width: 100%;
     height: 35px;
@@ -33,25 +40,33 @@
 
 .input-email {
   opacity: 0;
+  -moz-transition: opacity .2s ease-out .5s, 
+                   -moz-transform .2s cubic-bezier(.47,-0.13,.01,1.65);
   transition: opacity .2s ease-out .5s, 
               transform .2s cubic-bezier(.47,-0.13,.01,1.65);
-}
+            }
 
 .input-password {
   opacity: 0;
-  transition: opacity .2s ease-out .6s, 
-              transform .3s cubic-bezier(.47,-0.13,.01,1.65) .6s;
+  -moz-transition:  opacity .2s ease-out .6s, 
+                    -moz-transform .3s cubic-bezier(.47,-0.13,.01,1.65) .6s;
+    transition: opacity .2s ease-out .6s, 
+                transform .3s cubic-bezier(.47,-0.13,.01,1.65) .6s;
 }
 
 .login-btn p {
   margin-top: 0;
   height: 100%;
+  -moz-transition: opacity .3s;
   transition: opacity .3s;
 }
 
 .input-field {
   width: 80%;
-  flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: auto;
   position: absolute;
   top: 15px;
@@ -74,7 +89,8 @@
 
 .signup-call {
   margin: auto;
-  align-self: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   color: rgba($text-light, 0.6);
   a {
     color: $brand;
@@ -101,7 +117,8 @@
 
 .fade {
   opacity: 0;
-  animation: opaque .5s 1.3s forwards;
+  -moz-animation: opaque .5s 1.3s forwards;
+          animation: opaque .5s 1.3s forwards;
 }
 
 .fade-in {
@@ -110,11 +127,47 @@
 
 .dropdown {
   opacity: 1;
-  transform: translate3d(0, 50px, 0);
+  -moz-transform: translate3d(0, 50px, 0);
+          transform: translate3d(0, 50px, 0);
 }
 
 .re-button {
-  animation: re-button .5s .9s forwards;
+  -moz-animation: re-button .5s .9s forwards;
+          animation: re-button .5s .9s forwards;
+}
+
+@-moz-keyframes re-button {
+  0% {
+    height: 50px;
+    width: 50%;
+    left: 25%;
+    opacity: 0;
+    z-index: 0;
+    line-height: 50px;
+  }
+  30% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  50% {
+
+    top: 135px;
+  }
+
+  100% {
+    height: 50px;
+    width: 50%;
+    left: 25%;
+    top: 120px;
+    background-color: $brand;
+    opacity: 1;
+    line-height: 50px;
+  }
 }
 
 @keyframes re-button {
@@ -139,10 +192,7 @@
 
     top: 135px;
   }
-  // 80% {
-    
-  //   top: 110px;
-  // }
+
   100% {
     height: 50px;
     width: 50%;
@@ -152,6 +202,16 @@
     opacity: 1;
     line-height: 50px;
   }
+}
+
+@-moz-keyframes opaque {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+  
 }
 
 @keyframes opaque {
